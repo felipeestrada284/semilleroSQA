@@ -12,6 +12,8 @@ public class DataInjection {
     public DataInjection() {
         this.name = faker.name().name();
         this.email = faker.internet().emailAddress();
+        this.currentAddress = faker.address().streetAddress();
+        this.permanentAddress = faker.address().fullAddress();
     }
 
     public String getName() {

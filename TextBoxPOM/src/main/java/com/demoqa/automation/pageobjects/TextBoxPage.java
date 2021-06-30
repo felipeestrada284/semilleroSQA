@@ -4,7 +4,7 @@ import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.DefaultUrl;
 import org.openqa.selenium.By;
 
-@DefaultUrl("https://www.demoqa.com")
+@DefaultUrl("https://www.demoqa.com/")
 public class TextBoxPage extends PageObject {
 
     public By clickElements = By.xpath("//*[text()='Elements']");
@@ -13,6 +13,7 @@ public class TextBoxPage extends PageObject {
     public By email = By.id("userEmail");
     public By currentAddress = By.id("currentAddress");
     public By permanentAddress = By.id("permanentAddress");
+    public By clickButton = By.id("submit");
 
 
     public void setUserName(String string) {

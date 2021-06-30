@@ -2,5 +2,7 @@ com/demoqa/automation/models/DataInjection.java
  com.demoqa.automation.models.DataInjection
 com/demoqa/automation/pageobjects/TextBoxPage.java
  com.demoqa.automation.pageobjects.TextBoxPage
-com/demoqa/automation/steps/TextBoxSteps.java
- com.demoqa.automation.steps.TextBoxSteps
+com/demoqa/automation/utils/Javascript.java
+ com.demoqa.automation.utils.Javascript
+com/demoqa/automation/steps/TextBoxPageSteps.java
+ com.demoqa.automation.steps.TextBoxPageSteps
