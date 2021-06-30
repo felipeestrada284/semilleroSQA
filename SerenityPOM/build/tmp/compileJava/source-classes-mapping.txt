@@ -1,0 +1,8 @@
+com/demoqa/automation/utils/Javascript.java
+ com.demoqa.automation.utils.Javascript
+com/demoqa/automation/models/DataInjection.java
+ com.demoqa.automation.models.DataInjection
+com/demoqa/automation/pageobjects/WebTablePage.java
+ com.demoqa.automation.pageobjects.WebTablePage
+com/demoqa/automation/steps/WebTableSteps.java
+ com.demoqa.automation.steps.WebTableSteps

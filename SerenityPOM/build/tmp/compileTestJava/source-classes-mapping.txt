@@ -1,0 +1,4 @@
+com/demoqa/test/runners/PracticeWebTableRunner.java
+ com.demoqa.test.runners.PracticeWebTableRunner
+com/demoqa/test/stepdefinitions/PracticeWebTableStepDefinitions.java
+ com.demoqa.test.stepdefinitions.PracticeWebTableStepDefinitions
