@@ -4,6 +4,9 @@ import com.demoqa.automation.models.DataInjection;
 import com.demoqa.automation.pageobjects.TextBoxPage;
 import com.demoqa.automation.utils.Javascript;
 import net.thucydides.core.annotations.Step;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.util.concurrent.TimeUnit;
 
 public class TextBoxPageSteps {
@@ -20,7 +23,10 @@ public class TextBoxPageSteps {
     public void registerInTextBoxPage() throws InterruptedException {
 
         textBoxPage.getDriver().manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-        Thread.sleep(5000);
+
+        WebDriverWait wait = new WebDriverWait(textBoxPage.getDriver(), 2);
+        wait.until(ExpectedConditions.textToBePresentInElementLocated(textBoxPage.clickElements, "Elements"));
+
         Javascript.clickJS(textBoxPage.getDriver(), textBoxPage.clickElements);
         Javascript.clickJS(textBoxPage.getDriver(), textBoxPage.clickTextBox);
         textBoxPage.setUserName(dataInjection.getName());
