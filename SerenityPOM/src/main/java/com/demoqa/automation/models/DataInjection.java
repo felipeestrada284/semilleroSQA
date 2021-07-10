@@ -6,7 +6,7 @@ import java.util.Locale;
 public class DataInjection {
     Faker faker = new Faker(new Locale("en-US"));
 
-    private String firstName, lastName, email, age, salary, department;
+    private final String firstName, lastName, email, age, salary, department;
 
     public DataInjection() {
         this.firstName = faker.name().firstName();

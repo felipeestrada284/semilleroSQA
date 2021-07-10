@@ -19,11 +19,12 @@ public class PracticeWebTableStepDefinitions {
     @When("^he fills all the requested fields in web table sections$")
     public void heFillsAllTheRequestedFieldsInWebTableSections() throws InterruptedException{
         webTableSteps.fillFieldsInWebTable();
-        webTableSteps.newUser();
+        //webTableSteps.newUser();
     }
 
     @Then("^He should see the registered users in the table$")
     public void heShouldSeeTheRegisteredUsersInTheTable() {
+        webTableSteps.validationsWebTablePage();
     }
 
 }

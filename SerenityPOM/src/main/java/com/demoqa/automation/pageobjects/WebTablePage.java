@@ -11,7 +11,6 @@ public class WebTablePage extends PageObject {
     public By elementsClick = By.xpath("//*[text()='Elements']");
     public By webTablesClick = By.xpath("//*[text()='Web Tables']");
     public By addClick = By.id("addNewRecordButton");
-
     public By firstNameInput = By.id("firstName");
     public By lastNameInput = By.id("lastName");
     public By emailInput = By.id("userEmail");
@@ -19,6 +18,12 @@ public class WebTablePage extends PageObject {
     public By salaryInput = By.id("salary");
     public By departmentInput = By.id("department");
     public By buttonSubmit = By.id("submit");
+
+    public By lastNameValidation = By.xpath("//div[3]//div[4]//div[1]//div[2]");
+    public By ageValidation = By.xpath("//div[3]//div[4]//div[1]//div[3]");
+    public By emailValidation =By.xpath("//div[3]//div[4]//div[1]//div[4]");
+    public By salaryValidation = By.xpath("//div[3]//div[4]//div[1]//div[5]");
+    public By departmentValidation = By.xpath("//div[3]//div[4]//div[1]//div[6]");
 
 
 
@@ -47,8 +52,22 @@ public class WebTablePage extends PageObject {
         getDriver().findElement(buttonSubmit).click();
     }
 
-    public void validationsUser(String expectedString){
-        assertEquals(getDriver().findElement(firstNameInput).isDisplayed(), expectedString);
+    public void validationLastName(String expectedString) {
+        assertEquals(getDriver().findElement(lastNameValidation).getText(), expectedString);
     }
+    public void validationAge(String expectedString){
+
+        assertEquals(getDriver().findElement(ageValidation).getText(), expectedString);
+    }
+    public void validationEmail(String expectedString){
+        assertEquals(getDriver().findElement(emailValidation).getText(), expectedString);
+    }
+    public void validationSalary(String expectedString){
+        assertEquals(getDriver().findElement(salaryValidation).getText(), expectedString);
+    }
+    public void validationDepartment(String expectedString){
+        assertEquals(getDriver().findElement(departmentValidation).getText(), expectedString);
+    }
+
 
 }

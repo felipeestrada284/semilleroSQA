@@ -11,6 +11,7 @@ public class WebTableSteps {
 
     WebTablePage webTablePage = new WebTablePage();
     DataInjection dataInjection = new DataInjection();
+    public static String lastName, email, age, salary, department;
 
     @Step
     public void openBrowser(){
@@ -32,6 +33,17 @@ public class WebTableSteps {
         webTablePage.setSalary(dataInjection.getSalary());
         webTablePage.setDepartment(dataInjection.getDepartment());
         webTablePage.clickButton();
+
+    }
+
+
+    @Step
+    public void validationsWebTablePage(){
+        webTablePage.validationLastName(dataInjection.getLastName());
+        webTablePage.validationAge(dataInjection.getAge());
+        webTablePage.validationEmail(dataInjection.getEmail());
+        webTablePage.validationSalary(dataInjection.getSalary());
+        webTablePage.validationDepartment(dataInjection.getDepartment());
     }
 
     @Step
