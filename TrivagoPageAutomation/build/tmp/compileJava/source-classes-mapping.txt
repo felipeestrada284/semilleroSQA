@@ -1,0 +1,4 @@
+com/trivago/automation/ui/ReservationTrivagoPage.java
+ com.trivago.automation.ui.ReservationTrivagoPage
+com/trivago/automation/interactions/OpenBrowser.java
+ com.trivago.automation.interactions.OpenBrowser

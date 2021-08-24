@@ -1,0 +1,4 @@
+com/trivago/test/runners/TrivagoRunner.java
+ com.trivago.test.runners.TrivagoRunner
+com/trivago/test/stepdefinitions/TrivagoStepDefinitions.java
+ com.trivago.test.stepdefinitions.TrivagoStepDefinitions
