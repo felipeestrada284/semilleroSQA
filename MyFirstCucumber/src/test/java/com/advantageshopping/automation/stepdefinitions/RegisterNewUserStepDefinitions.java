@@ -24,7 +24,7 @@ public class RegisterNewUserStepDefinitions {
     public void thatAWebUserWantsToRegisterInAdvantageShoppingOnline() {
         System.setProperty("webdriver.chrome.driver","src/main/resources/drivers/chromedriver.exe");
         driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        driver.manage().window().getSize();
         driver.get("https://www.advantageonlineshopping.com/#/");
         driver.navigate().refresh();
         //Esperar hasta que los elementos carguen
