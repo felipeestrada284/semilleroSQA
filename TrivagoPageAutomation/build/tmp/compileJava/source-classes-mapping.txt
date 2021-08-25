@@ -1,4 +1,10 @@
-com/trivago/automation/ui/ReservationTrivagoPage.java
- com.trivago.automation.ui.ReservationTrivagoPage
 com/trivago/automation/interactions/OpenBrowser.java
  com.trivago.automation.interactions.OpenBrowser
+com/trivago/automation/questions/GetDataUserQuestion.java
+ com.trivago.automation.questions.GetDataUserQuestion
+com/trivago/automation/ui/ReservationTrivagoPage.java
+ com.trivago.automation.ui.ReservationTrivagoPage
+com/trivago/automation/models/DataInjection.java
+ com.trivago.automation.models.DataInjection
+com/trivago/automation/tasks/FillFieldsOnThePage.java
+ com.trivago.automation.tasks.FillFieldsOnThePage

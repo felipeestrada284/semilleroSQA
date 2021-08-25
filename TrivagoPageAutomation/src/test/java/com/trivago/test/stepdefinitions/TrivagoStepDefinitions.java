@@ -1,6 +1,8 @@
 package com.trivago.test.stepdefinitions;
 
 import com.trivago.automation.interactions.OpenBrowser;
+import com.trivago.automation.models.DataInjection;
+import com.trivago.automation.tasks.FillFieldsOnThePage;
 import com.trivago.automation.ui.ReservationTrivagoPage;
 import cucumber.api.PendingException;
 import cucumber.api.java.Before;
@@ -15,6 +17,8 @@ import org.openqa.selenium.WebDriver;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class TrivagoStepDefinitions {
+
+    DataInjection dataInjection = new DataInjection();
 
     @Managed
     private WebDriver driver;
@@ -33,6 +37,7 @@ public class TrivagoStepDefinitions {
 
     @When("^he will make a reservation on the page for a round trip flight$")
     public void heWillMakeAReservationOnThePageForARoundTripFlight() {
+        theActorInTheSpotlight().attemptsTo(FillFieldsOnThePage.completeForm());
     }
 
     @Then("^he must validate that the reservation was made correctly with the data entered$")
